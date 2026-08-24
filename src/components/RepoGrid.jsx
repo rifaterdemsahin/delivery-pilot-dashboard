@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import RepoCard from './RepoCard';
+import PresetTagsBar, { PRESET_TAG_GROUPS } from './PresetTagsBar';
 import { 
   Search, 
   Filter, 
@@ -41,12 +42,24 @@ export default function RepoGrid({
   visibilityFilter,
   setVisibilityFilter,
   categoryFilter,
-  setCategoryFilter
+  setCategoryFilter,
+  selectedPresetTags,
+  onTogglePresetTag,
+  onClearPresetTags
 }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [languageFilter, setLanguageFilter] = useState('all');
   const [sortBy, setSortBy] = useState('default');
   const [currentPage, setCurrentPage] = useState(1);
+
+  // Flatten all available preset tags
+  const allPresetTagsMap = useMemo(() => {
+    const map = new Map();
+    PRESET_TAG_GROUPS.forEach(g => {
+      g.tags.forEach(t => map.set(t.id, t));
+    });
+    return map;
+  }, []);
 
   // Clean repos with guaranteed exclusion filter
   const cleanRepos = useMemo(() => {
@@ -75,6 +88,17 @@ export default function RepoGrid({
       // Language Filter
       if (languageFilter !== 'all' && repo.language !== languageFilter) return false;
 
+      // Preset Tags Filter (if any tags are selected, matches repo against tag keywords)
+      if (selectedPresetTags && selectedPresetTags.length > 0) {
+        const repoText = `${repo.name} ${repo.description} ${repo.category} ${repo.language}`.toLowerCase();
+        const matchesAnyTag = selectedPresetTags.some(tagId => {
+          const tagObj = allPresetTagsMap.get(tagId);
+          if (!tagObj) return false;
+          return tagObj.keywords.some(kw => repoText.includes(kw));
+        });
+        if (!matchesAnyTag) return false;
+      }
+
       // Search Query Filter
       if (searchTerm.trim() !== '') {
         const q = searchTerm.toLowerCase().trim();
@@ -92,7 +116,7 @@ export default function RepoGrid({
       if (sortBy === 'updated') return new Date(b.updatedAt) - new Date(a.updatedAt);
       return 0; // default order
     });
-  }, [cleanRepos, visibilityFilter, categoryFilter, languageFilter, searchTerm, sortBy]);
+  }, [cleanRepos, visibilityFilter, categoryFilter, languageFilter, selectedPresetTags, allPresetTagsMap, searchTerm, sortBy]);
 
   // Pagination calculation
   const totalPages = Math.ceil(filteredRepos.length / ITEMS_PER_PAGE) || 1;
@@ -112,6 +136,7 @@ export default function RepoGrid({
     setCategoryFilter('all');
     setLanguageFilter('all');
     setSortBy('default');
+    if (onClearPresetTags) onClearPresetTags();
     setCurrentPage(1);
   };
 
@@ -119,6 +144,13 @@ export default function RepoGrid({
 
   return (
     <div>
+      {/* Top Preset Tags Bar */}
+      <PresetTagsBar
+        selectedTagIds={selectedPresetTags || []}
+        onToggleTag={onTogglePresetTag}
+        onClearTags={onClearPresetTags}
+      />
+
       {/* Control Bar: Search & Filters */}
       <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 sm:p-5 mb-8 shadow-xl backdrop-blur-lg">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-3.5">
@@ -226,12 +258,12 @@ export default function RepoGrid({
         <div className="flex flex-wrap items-center justify-between gap-3 mt-4 pt-3 border-t border-slate-800/80 text-xs text-slate-400">
           <div className="flex items-center gap-2">
             <span>Showing <strong className="text-white">{filteredRepos.length}</strong> matching repositories</span>
-            {(visibilityFilter !== 'all' || categoryFilter !== 'all' || languageFilter !== 'all' || searchTerm) && (
+            {(visibilityFilter !== 'all' || categoryFilter !== 'all' || languageFilter !== 'all' || (selectedPresetTags && selectedPresetTags.length > 0) || searchTerm) && (
               <button
                 onClick={resetFilters}
                 className="text-cyan-400 hover:text-cyan-300 font-semibold underline ml-2"
               >
-                Reset all filters
+                Reset all filters & tags
               </button>
             )}
           </div>
@@ -274,15 +306,15 @@ export default function RepoGrid({
       ) : (
         <div className="p-12 text-center rounded-2xl glass-panel border border-slate-800">
           <SlidersHorizontal className="w-12 h-12 text-slate-600 mx-auto mb-3" />
-          <h4 className="text-lg font-bold text-white">No repositories match your filter</h4>
+          <h4 className="text-lg font-bold text-white">No repositories match your selected filters & tags</h4>
           <p className="text-sm text-slate-400 mt-1 max-w-md mx-auto">
-            Try adjusting your search keywords, clearing language filters, or viewing both public and private repos.
+            Try adjusting your search keywords, clearing tag selections, or viewing both public and private repos.
           </p>
           <button
             onClick={resetFilters}
             className="mt-4 px-4 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold transition"
           >
-            Clear All Filters
+            Clear All Filters & Tags
           </button>
         </div>
       )}

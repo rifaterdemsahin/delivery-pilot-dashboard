@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { 
   X, 
   GraduationCap, 
@@ -14,9 +14,11 @@ import {
   FolderGit2,
   Layers,
   MessageSquareQuote,
-  Flame
+  Flame,
+  Tag
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { PRESET_TAG_GROUPS } from './PresetTagsBar';
 
 const SKOOL_COMMENT_URL = 'https://www.skool.com/delivery-pilot-8938/1-1-workshops?p=65f6a56e';
 
@@ -24,20 +26,30 @@ export default function SkoolBookingModal({
   isOpen, 
   onClose, 
   selectedRepos = [], 
+  selectedPresetTags = [],
   singleRepo = null 
 }) {
   const [copied, setCopied] = useState(false);
-  const [selectedLevel, setSelectedLevel] = useState('All Levels');
+
+  // Map tag IDs to full tag objects
+  const activeTags = useMemo(() => {
+    const allTags = PRESET_TAG_GROUPS.flatMap(g => g.tags);
+    return allTags.filter(t => (selectedPresetTags || []).includes(t.id));
+  }, [selectedPresetTags]);
 
   if (!isOpen) return null;
 
   const targetRepos = singleRepo ? [singleRepo] : selectedRepos;
 
-  // Build the rich workshop brief formatted as requested
+  // Build the rich workshop brief formatted with selected tags & repos
   const buildWorkshopBrief = () => {
     const reposListText = targetRepos.length > 0
       ? targetRepos.map((r, i) => `   - ${r.name} (${r.visibility}) [${r.category}]: ${r.url}`).join('\n')
       : '   - (Custom selection from 460+ Delivery Pilot repos catalog)';
+
+    const tagsText = activeTags.length > 0
+      ? activeTags.map(t => `   • ${t.emoji} ${t.name}: ${t.subtitle}`).join('\n')
+      : '   • 🛡️ Guardrails: Blocks prompt injections & jailbreaks live.\n   • 📦 Sandboxing: Runs generated code in isolated containers.\n   • 🔥 Claim "The Seat": Get personalized attention to solve your blockers.';
 
     return `COHORTS ON SUNDAYS
 
@@ -51,6 +63,9 @@ Frequency: Weekly (Cohorts on Sundays / 1-1 Slots)
 Time: Today @ 7:00 PM – 9:00 PM (BST / London Time)
 Location: Skool Live Room
 Lead Instructor / Host: Rifat Erdem Sahin (https://github.com/rifaterdemsahin)
+
+Selected Presets & Environment Configuration:
+${tagsText}
 
 Preconditions
 • Active Skool account with VIP tier permissions for live laboratory access.
@@ -155,6 +170,25 @@ Comment submitted on Skool: ${SKOOL_COMMENT_URL}`;
               </p>
             </div>
           </div>
+
+          {/* Active Preset Tags Indicator */}
+          {activeTags.length > 0 && (
+            <div className="p-4 rounded-2xl bg-slate-950 border border-cyan-800/60 space-y-2">
+              <div className="flex items-center gap-2 font-bold text-cyan-400 text-xs">
+                <Tag className="w-3.5 h-3.5" />
+                <span>Selected Environment & Security Presets ({activeTags.length}):</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {activeTags.map(t => (
+                  <span key={t.id} className="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-[11px] flex items-center gap-1.5">
+                    <span>{t.emoji}</span>
+                    <span className="font-bold text-white">{t.name}:</span>
+                    <span className="text-slate-400">{t.subtitle}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Preset & Session Meta */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">

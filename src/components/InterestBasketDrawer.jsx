@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { 
   X, 
   Trash2, 
@@ -9,12 +9,14 @@ import {
   Check, 
   Globe, 
   Lock, 
-  ArrowRight,
-  ExternalLink,
-  Sparkles,
-  Layers,
-  Flame
+  ArrowRight, 
+  ExternalLink, 
+  Sparkles, 
+  Layers, 
+  Flame,
+  Tag
 } from 'lucide-react';
+import { PRESET_TAG_GROUPS } from './PresetTagsBar';
 
 const SKOOL_COMMENT_URL = 'https://www.skool.com/delivery-pilot-8938/1-1-workshops?p=65f6a56e';
 
@@ -22,11 +24,18 @@ export default function InterestBasketDrawer({
   isOpen, 
   onClose, 
   selectedRepos, 
+  selectedPresetTags = [],
   onRemoveRepo, 
-  onClearAll,
-  onOpenSkool
+  onClearAll, 
+  onOpenSkool 
 }) {
   const [copiedPayload, setCopiedPayload] = useState(false);
+
+  // Map tag IDs to full tag objects
+  const activeTags = useMemo(() => {
+    const allTags = PRESET_TAG_GROUPS.flatMap(g => g.tags);
+    return allTags.filter(t => (selectedPresetTags || []).includes(t.id));
+  }, [selectedPresetTags]);
 
   if (!isOpen) return null;
 
@@ -38,6 +47,9 @@ export default function InterestBasketDrawer({
 
   const copyInterestPayload = () => {
     const reposList = selectedRepos.map((r, i) => `   - ${r.name} (${r.visibility}) [${r.category}]: ${r.url}`).join('\n');
+    const tagsText = activeTags.length > 0
+      ? activeTags.map(t => `   • ${t.emoji} ${t.name}: ${t.subtitle}`).join('\n')
+      : '   • 🛡️ Guardrails: Blocks prompt injections & jailbreaks live.\n   • 📦 Sandboxing: Runs generated code in isolated containers.\n   • 🔥 Claim "The Seat": Get personalized attention to solve your blockers.';
 
     const summaryText = `COHORTS ON SUNDAYS
 
@@ -51,6 +63,9 @@ Frequency: Weekly (Cohorts on Sundays / 1-1 Slots)
 Time: Today @ 7:00 PM – 9:00 PM (BST / London Time)
 Location: Skool Live Room
 Lead Instructor / Host: Rifat Erdem Sahin (https://github.com/rifaterdemsahin)
+
+Selected Presets & Environment Configuration:
+${tagsText}
 
 Preconditions
 • Active Skool account with VIP tier permissions for live laboratory access.
@@ -108,6 +123,23 @@ Comment submitted on Skool: ${SKOOL_COMMENT_URL}`;
 
           {/* Body Content */}
           <div className="p-6 overflow-y-auto space-y-6 flex-1 text-xs">
+            {/* Active Tags Summary in Basket */}
+            {activeTags.length > 0 && (
+              <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+                <div className="flex items-center gap-1.5 font-bold text-cyan-400 text-[11px]">
+                  <Tag className="w-3.5 h-3.5" />
+                  <span>Selected Environment Presets ({activeTags.length}):</span>
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {activeTags.map(t => (
+                    <span key={t.id} className="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-700 text-slate-200 text-[10px]">
+                      {t.emoji} {t.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {selectedRepos.length === 0 ? (
               <div className="p-8 text-center border border-dashed border-slate-800 rounded-2xl">
                 <Sparkles className="w-8 h-8 text-slate-600 mx-auto mb-2" />

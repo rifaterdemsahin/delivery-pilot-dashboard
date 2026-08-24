@@ -23,11 +23,21 @@ import {
 } from 'lucide-react';
 
 const BASKET_STORAGE_KEY = 'delivery_pilot_selected_repos';
+const TAGS_STORAGE_KEY = 'delivery_pilot_selected_tags';
 
 export default function App() {
   const [selectedRepos, setSelectedRepos] = useState(() => {
     try {
       const stored = localStorage.getItem(BASKET_STORAGE_KEY);
+      return stored ? JSON.parse(stored) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  const [selectedPresetTags, setSelectedPresetTags] = useState(() => {
+    try {
+      const stored = localStorage.getItem(TAGS_STORAGE_KEY);
       return stored ? JSON.parse(stored) : [];
     } catch {
       return [];
@@ -55,6 +65,15 @@ export default function App() {
     }
   }, [selectedRepos]);
 
+  // Sync selected preset tags to localStorage
+  useEffect(() => {
+    try {
+      localStorage.setItem(TAGS_STORAGE_KEY, JSON.stringify(selectedPresetTags));
+    } catch (e) {
+      console.warn('Failed to persist selected preset tags:', e);
+    }
+  }, [selectedPresetTags]);
+
   const handleToggleSelect = (repo) => {
     setSelectedRepos((prev) => {
       const exists = prev.some((r) => r.name === repo.name);
@@ -72,6 +91,20 @@ export default function App() {
 
   const handleClearBasket = () => {
     setSelectedRepos([]);
+  };
+
+  const handleTogglePresetTag = (tag) => {
+    setSelectedPresetTags((prev) => {
+      if (prev.includes(tag.id)) {
+        return prev.filter((id) => id !== tag.id);
+      } else {
+        return [...prev, tag.id];
+      }
+    });
+  };
+
+  const handleClearPresetTags = () => {
+    setSelectedPresetTags([]);
   };
 
   const handleOpenSkoolWithRepo = (repo = null) => {
@@ -119,6 +152,9 @@ export default function App() {
             setVisibilityFilter={setVisibilityFilter}
             categoryFilter={categoryFilter}
             setCategoryFilter={setCategoryFilter}
+            selectedPresetTags={selectedPresetTags}
+            onTogglePresetTag={handleTogglePresetTag}
+            onClearPresetTags={handleClearPresetTags}
           />
         )}
 
@@ -176,12 +212,15 @@ export default function App() {
             >
               <span>Cloudflare Pages</span>
             </button>
-            <button
-              onClick={() => handleOpenSkoolWithRepo(null)}
+            <a
+              href="https://www.skool.com/delivery-pilot-8938/1-1-workshops?p=65f6a56e"
+              target="_blank"
+              rel="noreferrer"
               className="hover:text-yellow-400 flex items-center gap-1 transition"
             >
-              <span>Skool Booking</span>
-            </button>
+              <span>Skool 1-1 Post</span>
+              <ExternalLink className="w-3 h-3" />
+            </a>
           </div>
 
           <div className="text-right text-[11px] text-slate-500">
@@ -195,6 +234,7 @@ export default function App() {
         isOpen={isBasketOpen}
         onClose={() => setIsBasketOpen(false)}
         selectedRepos={selectedRepos}
+        selectedPresetTags={selectedPresetTags}
         onRemoveRepo={handleRemoveFromBasket}
         onClearAll={handleClearBasket}
         onOpenSkool={() => handleOpenSkoolWithRepo(null)}
@@ -226,6 +266,7 @@ export default function App() {
         isOpen={isSkoolModalOpen}
         onClose={() => setIsSkoolModalOpen(false)}
         selectedRepos={selectedRepos}
+        selectedPresetTags={selectedPresetTags}
         singleRepo={skoolTargetRepo}
       />
     </div>
