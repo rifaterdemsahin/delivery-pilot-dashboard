@@ -1,8 +1,19 @@
 # Delivery Pilot Dashboard 🚀
 
-> Interactive workshop catalog, repository explorer, and delivery engine for **Rifat Erdem Sahin's 460+ GitHub repositories** (`https://github.com/rifaterdemsahin?tab=repositories`). 
+> Interactive workshop catalog, repository explorer, and delivery engine for **Rifat Erdem Sahin's 460+ GitHub repositories** (`https://github.com/rifaterdemsahin?tab=repositories`).
 
-Designed for **Delivery Pilot** audiences and engineering teams to select repositories, verify **Pre & Post Conditions**, synchronize cloud credentials via **Azure Key Vault**, deploy directly to **Cloudflare Edge**, and book live workshop sessions on **Skool**.
+[![Live Deployment](https://img.shields.io/badge/Live%20Dashboard-Online-success?style=for-the-badge&logo=githubpages)](https://rifaterdemsahin.github.io/delivery-pilot-dashboard/)
+[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare%20Pages-Edge%20Ready-orange?style=for-the-badge&logo=cloudflare)](https://delivery-pilot-dashboard.pages.dev)
+[![Skool Booking](https://img.shields.io/badge/Skool-Book%20Workshop-yellow?style=for-the-badge&logo=googleclassroom)](https://www.skool.com)
+
+---
+
+## 🌐 Live URLs & Access
+
+- 🚀 **Live Production Dashboard**: [https://rifaterdemsahin.github.io/delivery-pilot-dashboard/](https://rifaterdemsahin.github.io/delivery-pilot-dashboard/)
+- ⚡ **Cloudflare Pages URL**: [https://delivery-pilot-dashboard.pages.dev](https://delivery-pilot-dashboard.pages.dev)
+- 📦 **GitHub Repository**: [https://github.com/rifaterdemsahin/delivery-pilot-dashboard](https://github.com/rifaterdemsahin/delivery-pilot-dashboard)
+- 🎓 **Skool Community & Booking**: [https://www.skool.com](https://www.skool.com)
 
 ---
 
@@ -116,6 +127,7 @@ bash scripts/sync-azure-keyvault.sh
 ## 🎓 Book a Workshop on Skool
 
 Visit the Skool community to schedule cohort dates and review materials:
+- **Live Application**: [https://rifaterdemsahin.github.io/delivery-pilot-dashboard/](https://rifaterdemsahin.github.io/delivery-pilot-dashboard/)
 - **Skool Community**: [https://www.skool.com](https://www.skool.com)
 - **GitHub Repositories**: [https://github.com/rifaterdemsahin?tab=repositories](https://github.com/rifaterdemsahin?tab=repositories)
 
