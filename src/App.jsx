@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Header from './components/Header';
 import StatsBanner from './components/StatsBanner';
 import RepoGrid from './components/RepoGrid';
@@ -9,7 +9,8 @@ import SkoolBookingModal from './components/SkoolBookingModal';
 import CloudflareDeployModal from './components/CloudflareDeployModal';
 import ConditionsMatrixView from './components/ConditionsMatrixView';
 import ArchitectureView from './components/ArchitectureView';
-import enrichedRepos from './data/reposData.json';
+import rawEnrichedRepos from './data/reposData.json';
+import { sanitizeRepoList, isExcludedRepo } from './utils/repoFilter';
 import { 
   FolderGit2, 
   KeyRound, 
@@ -25,11 +26,15 @@ import {
 const BASKET_STORAGE_KEY = 'delivery_pilot_selected_repos';
 const TAGS_STORAGE_KEY = 'delivery_pilot_selected_tags';
 
+// Automatically sanitize repos behind the scenes at module initialization
+const safeRepos = sanitizeRepoList(rawEnrichedRepos);
+
 export default function App() {
   const [selectedRepos, setSelectedRepos] = useState(() => {
     try {
       const stored = localStorage.getItem(BASKET_STORAGE_KEY);
-      return stored ? JSON.parse(stored) : [];
+      const parsed = stored ? JSON.parse(stored) : [];
+      return sanitizeRepoList(parsed);
     } catch {
       return [];
     }
@@ -56,10 +61,11 @@ export default function App() {
   const [isSkoolModalOpen, setIsSkoolModalOpen] = useState(false);
   const [skoolTargetRepo, setSkoolTargetRepo] = useState(null);
 
-  // Sync selected repos to localStorage
+  // Sync selected repos to localStorage (always sanitized)
   useEffect(() => {
     try {
-      localStorage.setItem(BASKET_STORAGE_KEY, JSON.stringify(selectedRepos));
+      const sanitized = sanitizeRepoList(selectedRepos);
+      localStorage.setItem(BASKET_STORAGE_KEY, JSON.stringify(sanitized));
     } catch (e) {
       console.warn('Failed to persist selected repos:', e);
     }
@@ -75,6 +81,7 @@ export default function App() {
   }, [selectedPresetTags]);
 
   const handleToggleSelect = (repo) => {
+    if (isExcludedRepo(repo)) return;
     setSelectedRepos((prev) => {
       const exists = prev.some((r) => r.name === repo.name);
       if (exists) {
@@ -108,6 +115,7 @@ export default function App() {
   };
 
   const handleOpenSkoolWithRepo = (repo = null) => {
+    if (repo && isExcludedRepo(repo)) return;
     setSkoolTargetRepo(repo);
     setIsSkoolModalOpen(true);
   };
@@ -135,7 +143,7 @@ export default function App() {
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Metric / Hero Banner */}
         <StatsBanner
-          repos={enrichedRepos}
+          repos={safeRepos}
           onSelectFilter={handleQuickStatFilter}
           activeVisibility={visibilityFilter}
           activeCategory={categoryFilter}
@@ -144,7 +152,7 @@ export default function App() {
         {/* Tab 1: Repositories & Workshop Catalog */}
         {activeTab === 'repos' && (
           <RepoGrid
-            repos={enrichedRepos}
+            repos={safeRepos}
             selectedRepos={selectedRepos}
             onToggleSelect={handleToggleSelect}
             onViewConditions={(repo) => setConditionsModalRepo(repo)}

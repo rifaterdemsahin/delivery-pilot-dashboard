@@ -17,22 +17,7 @@ import {
 
 const ITEMS_PER_PAGE = 24;
 
-// Explicit remembered exclusion filters
-const EXCLUDED_NAMES = new Set(['saa']);
-const EXCLUDED_PATTERNS = [
-  /12[\s-_]?step/i,
-  /\bsaa\b/i
-];
-
-function isRepoBlocked(repo) {
-  const name = (repo.name || '').toLowerCase().trim();
-  const desc = (repo.description || '').toLowerCase().trim();
-  if (EXCLUDED_NAMES.has(name)) return true;
-  for (const p of EXCLUDED_PATTERNS) {
-    if (p.test(name) || p.test(desc)) return true;
-  }
-  return false;
-}
+import { isExcludedRepo } from '../utils/repoFilter';
 
 export default function RepoGrid({ 
   repos, 
@@ -61,9 +46,8 @@ export default function RepoGrid({
     return map;
   }, []);
 
-  // Clean repos with guaranteed exclusion filter
   const cleanRepos = useMemo(() => {
-    return repos.filter(r => !isRepoBlocked(r));
+    return repos.filter(r => !isExcludedRepo(r));
   }, [repos]);
 
   // Extract unique languages

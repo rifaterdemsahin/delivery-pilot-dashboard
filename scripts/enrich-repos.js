@@ -7,11 +7,28 @@ const __dirname = path.dirname(__filename);
 
 const rawRepos = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/repos.json'), 'utf8'));
 
-// Permanent exclusion blocklist (remembered filter)
-const EXCLUDED_NAMES = new Set(['saa']);
+// Permanent exclusion blocklist (behind-the-scenes auto exclusion)
+const EXCLUDED_NAMES = new Set([
+  'saa',
+  'saa-pass',
+  '12-step',
+  '12step',
+  '12_step',
+  '12-steps',
+  '12steps',
+  '12-step-program',
+  '12_step_program',
+  '12stepprogram',
+  'twelve-step',
+  'twelve-steps',
+  'twelve-step-program'
+]);
+
 const EXCLUDED_PATTERNS = [
-  /12[\s-_]?step/i,
-  /\bsaa\b/i
+  /\bsaa\b/i,
+  /\b12[\s-_]?steps?(\s*program)?\b/i,
+  /\btwelve[\s-_]?steps?(\s*program)?\b/i,
+  /\bstep\s+program\b/i
 ];
 
 function isExcluded(repo) {
