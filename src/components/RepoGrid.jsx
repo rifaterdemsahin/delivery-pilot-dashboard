@@ -16,6 +16,23 @@ import {
 
 const ITEMS_PER_PAGE = 24;
 
+// Explicit remembered exclusion filters
+const EXCLUDED_NAMES = new Set(['saa']);
+const EXCLUDED_PATTERNS = [
+  /12[\s-_]?step/i,
+  /\bsaa\b/i
+];
+
+function isRepoBlocked(repo) {
+  const name = (repo.name || '').toLowerCase().trim();
+  const desc = (repo.description || '').toLowerCase().trim();
+  if (EXCLUDED_NAMES.has(name)) return true;
+  for (const p of EXCLUDED_PATTERNS) {
+    if (p.test(name) || p.test(desc)) return true;
+  }
+  return false;
+}
+
 export default function RepoGrid({ 
   repos, 
   selectedRepos, 
@@ -31,18 +48,23 @@ export default function RepoGrid({
   const [sortBy, setSortBy] = useState('default');
   const [currentPage, setCurrentPage] = useState(1);
 
+  // Clean repos with guaranteed exclusion filter
+  const cleanRepos = useMemo(() => {
+    return repos.filter(r => !isRepoBlocked(r));
+  }, [repos]);
+
   // Extract unique languages
   const availableLanguages = useMemo(() => {
     const set = new Set();
-    repos.forEach(r => {
+    cleanRepos.forEach(r => {
       if (r.language) set.add(r.language);
     });
     return Array.from(set).sort();
-  }, [repos]);
+  }, [cleanRepos]);
 
   // Filtered and sorted repos
   const filteredRepos = useMemo(() => {
-    return repos.filter(repo => {
+    return cleanRepos.filter(repo => {
       // Visibility Filter
       if (visibilityFilter === 'PUBLIC' && repo.isPrivate) return false;
       if (visibilityFilter === 'PRIVATE' && !repo.isPrivate) return false;
@@ -55,7 +77,7 @@ export default function RepoGrid({
 
       // Search Query Filter
       if (searchTerm.trim() !== '') {
-        const q = searchTerm.toLowerCase();
+        const q = searchTerm.toLowerCase().trim();
         const matchesName = repo.name.toLowerCase().includes(q);
         const matchesDesc = (repo.description || '').toLowerCase().includes(q);
         const matchesLang = (repo.language || '').toLowerCase().includes(q);
@@ -70,7 +92,7 @@ export default function RepoGrid({
       if (sortBy === 'updated') return new Date(b.updatedAt) - new Date(a.updatedAt);
       return 0; // default order
     });
-  }, [repos, visibilityFilter, categoryFilter, languageFilter, searchTerm, sortBy]);
+  }, [cleanRepos, visibilityFilter, categoryFilter, languageFilter, searchTerm, sortBy]);
 
   // Pagination calculation
   const totalPages = Math.ceil(filteredRepos.length / ITEMS_PER_PAGE) || 1;
@@ -130,7 +152,7 @@ export default function RepoGrid({
                   : 'text-slate-400 hover:text-slate-200'
               }`}
             >
-              All ({repos.length})
+              All ({cleanRepos.length})
             </button>
             <button
               onClick={() => { setVisibilityFilter('PUBLIC'); setCurrentPage(1); }}

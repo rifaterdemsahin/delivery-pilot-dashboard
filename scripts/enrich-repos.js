@@ -1,7 +1,28 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const rawRepos = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/repos.json'), 'utf8'));
+
+// Permanent exclusion blocklist (remembered filter)
+const EXCLUDED_NAMES = new Set(['saa']);
+const EXCLUDED_PATTERNS = [
+  /12[\s-_]?step/i,
+  /\bsaa\b/i
+];
+
+function isExcluded(repo) {
+  const name = (repo.name || '').toLowerCase().trim();
+  const desc = (repo.description || '').toLowerCase().trim();
+  if (EXCLUDED_NAMES.has(name)) return true;
+  for (const pattern of EXCLUDED_PATTERNS) {
+    if (pattern.test(name) || pattern.test(desc)) return true;
+  }
+  return false;
+}
 
 function inferCategory(repo) {
   const name = (repo.name || '').toLowerCase();
@@ -221,7 +242,9 @@ function getBuildInstructions(repo, category) {
   };
 }
 
-const enrichedRepos = rawRepos.map((r, idx) => {
+const filteredRaw = rawRepos.filter(r => !isExcluded(r));
+
+const enrichedRepos = filteredRaw.map((r, idx) => {
   const category = inferCategory(r);
   return {
     id: idx + 1,
@@ -248,4 +271,4 @@ fs.writeFileSync(
   JSON.stringify(enrichedRepos, null, 2)
 );
 
-console.log(`Successfully enriched ${enrichedRepos.length} repositories into src/data/reposData.json`);
+console.log(`Successfully enriched ${enrichedRepos.length} repositories into src/data/reposData.json (excluded ${rawRepos.length - filteredRaw.length} repositories)`);

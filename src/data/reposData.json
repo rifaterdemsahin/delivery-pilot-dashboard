@@ -2369,43 +2369,6 @@
   },
   {
     "id": 65,
-    "name": "saa",
-    "visibility": "PRIVATE",
-    "isPrivate": true,
-    "description": "12 step program",
-    "url": "https://github.com/rifaterdemsahin/saa",
-    "updatedAt": "2026-07-22T17:05:36Z",
-    "language": "HTML",
-    "stargazerCount": 0,
-    "isFork": false,
-    "category": "FullStack & Web Apps",
-    "preConditions": [
-      "GitHub Account with Repo Access & SSH/PAT key configured",
-      "Azure CLI (az) & Azure Subscription with Key Vault Read/Write permissions",
-      "Cloudflare Account & API Token (Pages / Workers permissions)",
-      "Node.js 18+ and modern package manager (npm / pnpm)",
-      "Cloudflare Pages build target set to `dist`",
-      "Wrangler CLI installed globally for instant local preview"
-    ],
-    "postConditions": [
-      "Repository successfully cloned, built, and verified without error",
-      "All production secrets synced from Azure Key Vault to Cloudflare Environment",
-      "Automated GitHub Actions CI/CD pipeline triggered and completed green",
-      "Production build deployed to Cloudflare Pages with live verification URL",
-      "Zero console errors and 100% Lighthouse Performance & Best Practices score",
-      "Delivery Pilot sign-off and Skool workshop cohort attendance recorded"
-    ],
-    "build": {
-      "setup": "npm install",
-      "run": "npm run dev",
-      "build": "npm run build",
-      "deploy": "npx wrangler pages deploy dist"
-    },
-    "estimatedDuration": "45 - 90 mins",
-    "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
-  },
-  {
-    "id": 66,
     "name": "delivery-pilot-dashboard",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2442,7 +2405,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 67,
+    "id": 66,
     "name": "Markdown-Fixer",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -2479,7 +2442,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 68,
+    "id": 67,
     "name": "animation-rising-lower-thirds",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2516,7 +2479,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 69,
+    "id": 68,
     "name": "edit-decision-list",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2553,7 +2516,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 70,
+    "id": 69,
     "name": "animation-asistant",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2590,7 +2553,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 71,
+    "id": 70,
     "name": "ai_certification_prepare",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2627,7 +2590,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 72,
+    "id": 71,
     "name": "multi-agent-error-recovery-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2664,7 +2627,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 73,
+    "id": 72,
     "name": "subagent-escalation-resilience",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2701,7 +2664,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 74,
+    "id": 73,
     "name": "hub-spoke-multi-agent-orchestrator",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2738,7 +2701,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 75,
+    "id": 74,
     "name": "record-and-transcribe",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2775,7 +2738,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 76,
+    "id": 75,
     "name": "Customer-Support-Resolution-Agent",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2812,7 +2775,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 77,
+    "id": 76,
     "name": "agent-platform",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2849,7 +2812,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 78,
+    "id": 77,
     "name": "policy-escalation-resilience-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2886,7 +2849,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 79,
+    "id": 78,
     "name": "customer-support-verification-guard",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2923,7 +2886,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 80,
+    "id": 79,
     "name": "keyword-bias-llm-agent-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2960,7 +2923,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 81,
+    "id": 80,
     "name": "multi-concern-agent-decomposer",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -2997,7 +2960,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 82,
+    "id": 81,
     "name": "animation-template-llm-training",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3034,7 +2997,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 83,
+    "id": 82,
     "name": "agent-escalation-calibration-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3071,7 +3034,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 84,
+    "id": 83,
     "name": "tool-selection-resilience-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3108,7 +3071,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 85,
+    "id": 84,
     "name": "tool-description-clarity-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3145,7 +3108,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 86,
+    "id": 85,
     "name": "posttooluse-format-normalizer",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3182,7 +3145,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 87,
+    "id": 86,
     "name": "case-facts-architect-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3219,7 +3182,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 88,
+    "id": 87,
     "name": "composite-tool-roundtrip-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3256,7 +3219,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 89,
+    "id": 88,
     "name": "parallel-customer-resolution-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3293,7 +3256,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 90,
+    "id": 89,
     "name": "tool-selection-boundary-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3330,7 +3293,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 91,
+    "id": 90,
     "name": "explore-subagent-resilience-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3367,7 +3330,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 92,
+    "id": 91,
     "name": "claude-command-architecture-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3404,7 +3367,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 93,
+    "id": 92,
     "name": "claude-slash-command-architecture-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3441,7 +3404,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 94,
+    "id": 93,
     "name": "github-mcp-user-scope-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3478,7 +3441,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 95,
+    "id": 94,
     "name": "claude-rules-glob-architecture-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3515,7 +3478,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 96,
+    "id": 95,
     "name": "claude-skill-override-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3552,7 +3515,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 97,
+    "id": 96,
     "name": "context-fork-skill-isolation-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3589,7 +3552,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 98,
+    "id": 97,
     "name": "slack-notify-architect-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3626,7 +3589,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 99,
+    "id": 98,
     "name": "claude-skills-architecture-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3663,7 +3626,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 100,
+    "id": 99,
     "name": "claude-context-architecture-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3700,7 +3663,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 101,
+    "id": 100,
     "name": "claude-rules-modular-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3737,7 +3700,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 102,
+    "id": 101,
     "name": "claude-config-scope-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3774,7 +3737,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 103,
+    "id": 102,
     "name": "migration-skill-security-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3811,7 +3774,7 @@
     "skoolModule": "Delivery Pilot Track: Cybersecurity & Adversarial"
   },
   {
-    "id": 104,
+    "id": 103,
     "name": "plan-mode-monolith-breakup-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3848,7 +3811,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 105,
+    "id": 104,
     "name": "claude-context-localization-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3885,7 +3848,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 106,
+    "id": 105,
     "name": "semantic-tool-routing-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3922,7 +3885,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 107,
+    "id": 106,
     "name": "tool-sprawl-capability-restriction-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3959,7 +3922,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 108,
+    "id": 107,
     "name": "agent-conflict-escalation-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -3996,7 +3959,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 109,
+    "id": 108,
     "name": "fly-vpn",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4033,7 +3996,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 110,
+    "id": 109,
     "name": "PlaywrightDockerMCP",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4070,7 +4033,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 111,
+    "id": 110,
     "name": "pageagent",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4107,7 +4070,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 112,
+    "id": 111,
     "name": "verify-fact-scoping-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4144,7 +4107,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 113,
+    "id": 112,
     "name": "intermediate-summarization-agent-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4181,7 +4144,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 114,
+    "id": 113,
     "name": "lost-in-the-middle-resilience-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4218,7 +4181,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 115,
+    "id": 114,
     "name": "api-rate-limiter-resilience",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4255,7 +4218,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 116,
+    "id": 115,
     "name": "resilient-subagent-pool-orchestrator",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4292,7 +4255,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 117,
+    "id": 116,
     "name": "error-coordination-sub-agents",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4329,7 +4292,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 118,
+    "id": 117,
     "name": "multi-agent-resilience-orchestrator",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4366,7 +4329,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 119,
+    "id": 118,
     "name": "distributed-cache-stampede-demo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4403,7 +4366,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 120,
+    "id": 119,
     "name": "openinterpreter",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -4440,7 +4403,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 121,
+    "id": 120,
     "name": "ece-health-support",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -4477,7 +4440,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 122,
+    "id": 121,
     "name": "my-claude-animations",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4514,7 +4477,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 123,
+    "id": 122,
     "name": "k8s-certificate-questions-handson",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4551,7 +4514,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 124,
+    "id": 123,
     "name": "image-search",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -4588,7 +4551,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 125,
+    "id": 124,
     "name": "kingston-ram-rma",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4625,7 +4588,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 126,
+    "id": 125,
     "name": "absolute-relative-urls",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4662,7 +4625,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 127,
+    "id": 126,
     "name": "to-do",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4699,7 +4662,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 128,
+    "id": 127,
     "name": "historical-dialectical-progression",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4736,7 +4699,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 129,
+    "id": 128,
     "name": "hungry-caterpillar",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4773,7 +4736,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 130,
+    "id": 129,
     "name": "circles",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -4810,7 +4773,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 131,
+    "id": 130,
     "name": "mongodb",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -4847,7 +4810,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 132,
+    "id": 131,
     "name": "llm-usage-dashboard",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4884,7 +4847,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 133,
+    "id": 132,
     "name": "contract-analysis",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4921,7 +4884,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 134,
+    "id": 133,
     "name": "claude-cowork",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -4958,7 +4921,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 135,
+    "id": 134,
     "name": "green-screen-helper",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -4995,7 +4958,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 136,
+    "id": 135,
     "name": "meditate",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5032,7 +4995,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 137,
+    "id": 136,
     "name": "mstodo-backup",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -5069,7 +5032,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 138,
+    "id": 137,
     "name": "kong-gateway",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5106,7 +5069,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 139,
+    "id": 138,
     "name": "web",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5143,7 +5106,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 140,
+    "id": 139,
     "name": "investing",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -5180,7 +5143,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 141,
+    "id": 140,
     "name": "local_ocr",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5217,7 +5180,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 142,
+    "id": 141,
     "name": "anonymous-chat",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -5254,7 +5217,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 143,
+    "id": 142,
     "name": "image_downloader",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5291,7 +5254,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 144,
+    "id": 143,
     "name": "convex_poc",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5328,7 +5291,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 145,
+    "id": 144,
     "name": "supabase_poc",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5365,7 +5328,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 146,
+    "id": 145,
     "name": "GetTheMathsInThineHead",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5402,7 +5365,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 147,
+    "id": 146,
     "name": "bizyair",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -5439,7 +5402,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 148,
+    "id": 147,
     "name": "image-edit",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -5476,7 +5439,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 149,
+    "id": 148,
     "name": "bmad",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5513,7 +5476,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 150,
+    "id": 149,
     "name": "copy-paste-helper",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5550,7 +5513,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 151,
+    "id": 150,
     "name": "music_motivational",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -5587,7 +5550,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 152,
+    "id": 151,
     "name": "multiplayer-home-games",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5624,7 +5587,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 153,
+    "id": 152,
     "name": "proxmox",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -5661,7 +5624,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 154,
+    "id": 153,
     "name": "roadmap-ece",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -5698,7 +5661,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 155,
+    "id": 154,
     "name": "minecraft",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5735,7 +5698,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 156,
+    "id": 155,
     "name": "previz-ai-asisted-storyboard",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5772,7 +5735,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 157,
+    "id": 156,
     "name": "display-binary-image",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5809,7 +5772,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 158,
+    "id": 157,
     "name": "umbrella-company",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -5846,7 +5809,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 159,
+    "id": 158,
     "name": "recruiter-agent",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5883,7 +5846,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 160,
+    "id": 159,
     "name": "kilocode-cli",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5920,7 +5883,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 161,
+    "id": 160,
     "name": "proxmox-markdown-uploader",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -5957,7 +5920,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 162,
+    "id": 161,
     "name": "openclaw",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -5994,7 +5957,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 163,
+    "id": 162,
     "name": "prometheus-local",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6031,7 +5994,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 164,
+    "id": 163,
     "name": "mcp_poc",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6068,7 +6031,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 165,
+    "id": 164,
     "name": "raspberry-pico-2-hid",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -6105,7 +6068,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 166,
+    "id": 165,
     "name": "beats-scorer",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6142,7 +6105,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 167,
+    "id": 166,
     "name": "CreateCourseandPublishPlatform",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6179,7 +6142,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 168,
+    "id": 167,
     "name": "claude",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6216,7 +6179,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 169,
+    "id": 168,
     "name": "semanticsearch",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6253,7 +6216,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 170,
+    "id": 169,
     "name": "schedule-helper",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -6290,7 +6253,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 171,
+    "id": 170,
     "name": "tidyup-abacus",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6327,7 +6290,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 172,
+    "id": 171,
     "name": "figma",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6364,7 +6327,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 173,
+    "id": 172,
     "name": "march_1_video",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6401,7 +6364,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 174,
+    "id": 173,
     "name": "dashboard",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -6438,7 +6401,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 175,
+    "id": 174,
     "name": "authentication",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6475,7 +6438,7 @@
     "skoolModule": "Delivery Pilot Track: Cybersecurity & Adversarial"
   },
   {
-    "id": 176,
+    "id": 175,
     "name": "git-template",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6512,7 +6475,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 177,
+    "id": 176,
     "name": "hermes",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6549,7 +6512,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 178,
+    "id": 177,
     "name": "post-production-planning",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6586,7 +6549,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 179,
+    "id": 178,
     "name": "video-production-maturity-matrix",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6623,7 +6586,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 180,
+    "id": 179,
     "name": "doppler",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6660,7 +6623,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 181,
+    "id": 180,
     "name": "streamlit",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6697,7 +6660,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 182,
+    "id": 181,
     "name": "sound-effect-music-generator",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6734,7 +6697,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 183,
+    "id": 182,
     "name": "windowMoverWithSpaceMouse",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6771,7 +6734,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 184,
+    "id": 183,
     "name": "streamdeck-profiles",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -6808,7 +6771,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 185,
+    "id": 184,
     "name": "streamdeck",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6845,7 +6808,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 186,
+    "id": 185,
     "name": "internet-access-manager",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -6882,7 +6845,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 187,
+    "id": 186,
     "name": "ai-cli",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6919,7 +6882,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 188,
+    "id": 187,
     "name": "remotion-with-a-prompt",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6956,7 +6919,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 189,
+    "id": 188,
     "name": "blur-tool",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -6993,7 +6956,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 190,
+    "id": 189,
     "name": "steam-pi",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7030,7 +6993,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 191,
+    "id": 190,
     "name": "flicker-image-with-text",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7067,7 +7030,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 192,
+    "id": 191,
     "name": "transparent-lowerthird",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7104,7 +7067,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 193,
+    "id": 192,
     "name": "prompt-builder",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7141,7 +7104,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 194,
+    "id": 193,
     "name": "diagram-animations",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7178,7 +7141,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 195,
+    "id": 194,
     "name": "chapter-markers",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7215,7 +7178,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 196,
+    "id": 195,
     "name": "ollama",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7252,7 +7215,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 197,
+    "id": 196,
     "name": "whisper",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7289,7 +7252,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 198,
+    "id": 197,
     "name": "digital-scene-editor-post-production",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7326,7 +7289,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 199,
+    "id": 198,
     "name": "crush",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7363,7 +7326,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 200,
+    "id": 199,
     "name": "qdrant",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7400,7 +7363,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 201,
+    "id": 200,
     "name": "memory-palace",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7437,7 +7400,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 202,
+    "id": 201,
     "name": "delivery-pilot-mvp",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -7474,7 +7437,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 203,
+    "id": 202,
     "name": "barrier-duty",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7511,7 +7474,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 204,
+    "id": 203,
     "name": "studio",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7548,7 +7511,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 205,
+    "id": 204,
     "name": "kvm",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7585,7 +7548,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 206,
+    "id": 205,
     "name": "obs",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7622,7 +7585,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 207,
+    "id": 206,
     "name": "lua",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7659,7 +7622,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 208,
+    "id": 207,
     "name": "machine-learning",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7696,7 +7659,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 209,
+    "id": 208,
     "name": "tts-mix",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7733,7 +7696,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 210,
+    "id": 209,
     "name": "macro_keyboard",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7770,7 +7733,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 211,
+    "id": 210,
     "name": "timeline-spotter",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7807,7 +7770,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 212,
+    "id": 211,
     "name": "feb2",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7844,7 +7807,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 213,
+    "id": 212,
     "name": "Freesound",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7881,7 +7844,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 214,
+    "id": 213,
     "name": "Manim",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7918,7 +7881,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 215,
+    "id": 214,
     "name": "PrismHighlight",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7955,7 +7918,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 216,
+    "id": 215,
     "name": "remotion",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -7992,7 +7955,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 217,
+    "id": 216,
     "name": "pexels",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8029,7 +7992,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 218,
+    "id": 217,
     "name": "fal.ai",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8066,7 +8029,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 219,
+    "id": 218,
     "name": "remotion_private",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -8103,7 +8066,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 220,
+    "id": 219,
     "name": "screenshot",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8140,7 +8103,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 221,
+    "id": 220,
     "name": "PrometheusLocalWorkStation",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8177,7 +8140,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 222,
+    "id": 221,
     "name": "beatoven.ai",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8214,7 +8177,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 223,
+    "id": 222,
     "name": "CaliforniaDriversQuiz",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -8251,7 +8214,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 224,
+    "id": 223,
     "name": "live-draw",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8288,7 +8251,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 225,
+    "id": 224,
     "name": "edb-replication-failure-testing",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8325,7 +8288,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 226,
+    "id": 225,
     "name": "edb-consistency-check",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8362,7 +8325,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 227,
+    "id": 226,
     "name": "DavinciResolveScripting",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8399,7 +8362,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 228,
+    "id": 227,
     "name": "connection-checker",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8436,7 +8399,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 229,
+    "id": 228,
     "name": "data-poisoning",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8473,7 +8436,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 230,
+    "id": 229,
     "name": "The-Complete-Security-Lifecycle",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8510,7 +8473,7 @@
     "skoolModule": "Delivery Pilot Track: Cybersecurity & Adversarial"
   },
   {
-    "id": 231,
+    "id": 230,
     "name": "Security-Metrics-and-Validation",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8547,7 +8510,7 @@
     "skoolModule": "Delivery Pilot Track: Cybersecurity & Adversarial"
   },
   {
-    "id": 232,
+    "id": 231,
     "name": "Red-Team-Methodology-Thinking-Like-an-Attacker",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8584,7 +8547,7 @@
     "skoolModule": "Delivery Pilot Track: Cybersecurity & Adversarial"
   },
   {
-    "id": 233,
+    "id": 232,
     "name": "Differential-Privacy-Protecting-Data-Preserving-Insight",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8621,7 +8584,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 234,
+    "id": 233,
     "name": "Input-Sanitization-Your-First-Line-of-Defense",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8658,7 +8621,7 @@
     "skoolModule": "Delivery Pilot Track: Cybersecurity & Adversarial"
   },
   {
-    "id": 235,
+    "id": 234,
     "name": "Adversarial-Training-Turning-Attacks-into-Model-Strength",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8695,7 +8658,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 236,
+    "id": 235,
     "name": "Model-Stealing-Extraction",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8732,7 +8695,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 237,
+    "id": 236,
     "name": "adversarial-evasion-lab",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8769,7 +8732,7 @@
     "skoolModule": "Delivery Pilot Track: Cybersecurity & Adversarial"
   },
   {
-    "id": 238,
+    "id": 237,
     "name": "november-video-4",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8806,7 +8769,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 239,
+    "id": 238,
     "name": "daily-status-report",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -8843,7 +8806,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 240,
+    "id": 239,
     "name": "ai-quiz-game",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8880,7 +8843,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 241,
+    "id": 240,
     "name": "legal-agent",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8917,7 +8880,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 242,
+    "id": 241,
     "name": "chatgpt-course",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8954,7 +8917,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 243,
+    "id": 242,
     "name": "PromptTypes",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -8991,7 +8954,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 244,
+    "id": 243,
     "name": "LearningChatGPT",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9028,7 +8991,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 245,
+    "id": 244,
     "name": "assesment-n8n",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -9065,7 +9028,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 246,
+    "id": 245,
     "name": "assesment",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9102,7 +9065,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 247,
+    "id": 246,
     "name": "json-edit",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9139,7 +9102,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 248,
+    "id": 247,
     "name": "svg",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9176,7 +9139,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 249,
+    "id": 248,
     "name": "lottie-animations",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9213,7 +9176,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 250,
+    "id": 249,
     "name": "VideoProductionPipeline",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -9250,7 +9213,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 251,
+    "id": 250,
     "name": "StoryCreator",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9287,7 +9250,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 252,
+    "id": 251,
     "name": "OnboardingManager",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -9324,7 +9287,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 253,
+    "id": 252,
     "name": "VideoProductionPlanNovemberWeek3",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9361,7 +9324,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 254,
+    "id": 253,
     "name": "PublishYourModel",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9398,7 +9361,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 255,
+    "id": 254,
     "name": "kerberos",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9435,7 +9398,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 256,
+    "id": 255,
     "name": "GeminiImageGenerator",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -9472,7 +9435,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 257,
+    "id": 256,
     "name": "business-model",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9509,7 +9472,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 258,
+    "id": 257,
     "name": "ai-vs-freelancer",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9546,7 +9509,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 259,
+    "id": 258,
     "name": "chatgpt-job-search-automator",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9583,7 +9546,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 260,
+    "id": 259,
     "name": "ai-security-course",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9620,7 +9583,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 261,
+    "id": 260,
     "name": "cvclipboard",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9657,7 +9620,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 262,
+    "id": 261,
     "name": "rag",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9694,7 +9657,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 263,
+    "id": 262,
     "name": "linkedin-content-magician",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9731,7 +9694,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 264,
+    "id": 263,
     "name": "Delivery_Pilot_CustomerDevelopment",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9768,7 +9731,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 265,
+    "id": 264,
     "name": "canva-animations",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9805,7 +9768,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 266,
+    "id": 265,
     "name": "devops-matrix",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9842,7 +9805,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 267,
+    "id": 266,
     "name": "Moodle",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9879,7 +9842,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 268,
+    "id": 267,
     "name": "theather-js",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9916,7 +9879,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 269,
+    "id": 268,
     "name": "flow-and-flash",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -9953,7 +9916,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 270,
+    "id": 269,
     "name": "linkedin-toolbox",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -9990,7 +9953,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 271,
+    "id": 270,
     "name": "marptoimages",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10027,7 +9990,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 272,
+    "id": 271,
     "name": "text_toolbox",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10064,7 +10027,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 273,
+    "id": 272,
     "name": "cv",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10101,7 +10064,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 274,
+    "id": 273,
     "name": "n8n_course",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10138,7 +10101,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 275,
+    "id": 274,
     "name": "coach_dialogue",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10175,7 +10138,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 276,
+    "id": 275,
     "name": "coverletter",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10212,7 +10175,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 277,
+    "id": 276,
     "name": "contractormarketing-email-helper",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -10249,7 +10212,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 278,
+    "id": 277,
     "name": "n8n_backups",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -10286,7 +10249,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 279,
+    "id": 278,
     "name": "CourseCreator",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -10323,7 +10286,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 280,
+    "id": 279,
     "name": "customer-discovery-funnel",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -10360,7 +10323,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 281,
+    "id": 280,
     "name": "cursor-poc-helper",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10397,7 +10360,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 282,
+    "id": 281,
     "name": "cursor-agent-repo",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -10434,7 +10397,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 283,
+    "id": 282,
     "name": "certbot",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -10471,7 +10434,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 284,
+    "id": 283,
     "name": "agi-executions",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10508,7 +10471,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 285,
+    "id": 284,
     "name": "secondbrain-archive",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -10545,7 +10508,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 286,
+    "id": 285,
     "name": "GeneralCoding",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10582,7 +10545,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 287,
+    "id": 286,
     "name": "ukcompany",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10619,7 +10582,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 288,
+    "id": 287,
     "name": "AllHandsAI",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10656,7 +10619,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 289,
+    "id": 288,
     "name": "cloudflare",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10693,7 +10656,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 290,
+    "id": 289,
     "name": "n8n_ai_integrations",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10730,7 +10693,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 291,
+    "id": 290,
     "name": "bankstatements",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -10767,7 +10730,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 292,
+    "id": 291,
     "name": "obsidiansearch",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10804,7 +10767,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 293,
+    "id": 292,
     "name": "YoutubeScriptWriter",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -10841,7 +10804,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 294,
+    "id": 293,
     "name": "environment_files_compare",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10878,7 +10841,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 295,
+    "id": 294,
     "name": "leonardoai",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10915,7 +10878,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 296,
+    "id": 295,
     "name": "mcp",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10952,7 +10915,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 297,
+    "id": 296,
     "name": "SonarQubeCourse",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -10989,7 +10952,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 298,
+    "id": 297,
     "name": "SonarQube",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11026,7 +10989,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 299,
+    "id": 298,
     "name": "mcpservers_forworkstations",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11063,7 +11026,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 300,
+    "id": 299,
     "name": "LFS",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11100,7 +11063,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 301,
+    "id": 300,
     "name": "Cypress",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11137,7 +11100,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 302,
+    "id": 301,
     "name": "PipelineAutomation",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11174,7 +11137,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 303,
+    "id": 302,
     "name": "circuitbreaker",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11211,7 +11174,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 304,
+    "id": 303,
     "name": "Fractions",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11248,7 +11211,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 305,
+    "id": 304,
     "name": "TektonPipelines",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11285,7 +11248,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 306,
+    "id": 305,
     "name": "SecurityToolSet",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11322,7 +11285,7 @@
     "skoolModule": "Delivery Pilot Track: Cybersecurity & Adversarial"
   },
   {
-    "id": 307,
+    "id": 306,
     "name": "itil",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11359,7 +11322,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 308,
+    "id": 307,
     "name": "Citrix",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11396,7 +11359,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 309,
+    "id": 308,
     "name": "contractorAgent",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -11433,7 +11396,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 310,
+    "id": 309,
     "name": "n8n",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11470,7 +11433,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 311,
+    "id": 310,
     "name": "grafana-automation",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11507,7 +11470,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 312,
+    "id": 311,
     "name": "AiAgent",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11544,7 +11507,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 313,
+    "id": 312,
     "name": "LocalPasswordManagement",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11581,7 +11544,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 314,
+    "id": 313,
     "name": "microservices",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11618,7 +11581,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 315,
+    "id": 314,
     "name": "EdbApache",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11655,7 +11618,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 316,
+    "id": 315,
     "name": "OCR",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11692,7 +11655,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 317,
+    "id": 316,
     "name": "huggingface",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11729,7 +11692,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 318,
+    "id": 317,
     "name": "kustomize",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11766,7 +11729,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 319,
+    "id": 318,
     "name": "ServiceMesh",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11803,7 +11766,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 320,
+    "id": 319,
     "name": "KubernetesRoutes",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11840,7 +11803,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 321,
+    "id": 320,
     "name": "artifacts",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11877,7 +11840,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 322,
+    "id": 321,
     "name": "xrdp",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -11914,7 +11877,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 323,
+    "id": 322,
     "name": "real-time-skills-obs",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11951,7 +11914,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 324,
+    "id": 323,
     "name": "webSocketsObs",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -11988,7 +11951,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 325,
+    "id": 324,
     "name": "OperatorManagement",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12025,7 +11988,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 326,
+    "id": 325,
     "name": "Speech",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12062,7 +12025,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 327,
+    "id": 326,
     "name": "PolicyManagement",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12099,7 +12062,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 328,
+    "id": 327,
     "name": "OnShape",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12136,7 +12099,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 329,
+    "id": 328,
     "name": "Kaniko",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12173,7 +12136,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 330,
+    "id": 329,
     "name": "openshift-argocd",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12210,7 +12173,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 331,
+    "id": 330,
     "name": "grafana-dashboard",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12247,7 +12210,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 332,
+    "id": 331,
     "name": "oauth",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12284,7 +12247,7 @@
     "skoolModule": "Delivery Pilot Track: Cybersecurity & Adversarial"
   },
   {
-    "id": 333,
+    "id": 332,
     "name": "GitClone",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12321,7 +12284,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 334,
+    "id": 333,
     "name": "starterguide",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12358,7 +12321,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 335,
+    "id": 334,
     "name": "scc",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12395,7 +12358,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 336,
+    "id": 335,
     "name": "OpenShiftEventRouter",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12432,7 +12395,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 337,
+    "id": 336,
     "name": "DevAIOpsContextCode",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12469,7 +12432,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 338,
+    "id": 337,
     "name": "tmux",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12506,7 +12469,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 339,
+    "id": 338,
     "name": "logstash",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12543,7 +12506,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 340,
+    "id": 339,
     "name": "Prompter",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -12580,7 +12543,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 341,
+    "id": 340,
     "name": "ThanosProxy",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12617,7 +12580,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 342,
+    "id": 341,
     "name": "LogSearchBash",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12654,7 +12617,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 343,
+    "id": 342,
     "name": "documents",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12691,7 +12654,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 344,
+    "id": 343,
     "name": "cleanslate",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12728,7 +12691,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 345,
+    "id": 344,
     "name": "SelfLearningFramework",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -12765,7 +12728,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 346,
+    "id": 345,
     "name": "IoT",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12802,7 +12765,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 347,
+    "id": 346,
     "name": "HomeGameCalc",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12839,7 +12802,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 348,
+    "id": 347,
     "name": "VMware",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12876,7 +12839,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 349,
+    "id": 348,
     "name": "containerports",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12913,7 +12876,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 350,
+    "id": 349,
     "name": "nginx",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12950,7 +12913,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 351,
+    "id": 350,
     "name": "LokiOpenShift",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -12987,7 +12950,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 352,
+    "id": 351,
     "name": "CanvaAutomate",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -13024,7 +12987,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 353,
+    "id": 352,
     "name": "devsecopsfoundation",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13061,7 +13024,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 354,
+    "id": 353,
     "name": "Putty",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13098,7 +13061,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 355,
+    "id": 354,
     "name": "KubernetesTraining",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13135,7 +13098,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 356,
+    "id": 355,
     "name": "PrometheusThanosConnection",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13172,7 +13135,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 357,
+    "id": 356,
     "name": "PrometheusAsDataSource",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13209,7 +13172,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 358,
+    "id": 357,
     "name": "containernetworksinkubernetes",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13246,7 +13209,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 359,
+    "id": 358,
     "name": "kubernetespodmetrics",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13283,7 +13246,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 360,
+    "id": 359,
     "name": "Observability",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13320,7 +13283,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 361,
+    "id": 360,
     "name": "CopilotWithCodeSpaces",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13357,7 +13320,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 362,
+    "id": 361,
     "name": "SunSetProtocol",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13394,7 +13357,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 363,
+    "id": 362,
     "name": "Griffin",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13431,7 +13394,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 364,
+    "id": 363,
     "name": "ContainerNetworkInterface",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13468,7 +13431,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 365,
+    "id": 364,
     "name": "openshiftpatching",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13505,7 +13468,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 366,
+    "id": 365,
     "name": "githubhelper",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13542,7 +13505,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 367,
+    "id": 366,
     "name": "CurlPostLogsAutomate",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13579,7 +13542,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 368,
+    "id": 367,
     "name": "bashdebug",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13616,7 +13579,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 369,
+    "id": 368,
     "name": "FluentD",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13653,7 +13616,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 370,
+    "id": 369,
     "name": "proxy",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -13690,7 +13653,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 371,
+    "id": 370,
     "name": "thanoswithdockerandminikube",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13727,7 +13690,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 372,
+    "id": 371,
     "name": "elasticsearch",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13764,7 +13727,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 373,
+    "id": 372,
     "name": "loki",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13801,7 +13764,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 374,
+    "id": 373,
     "name": "prometheusremotewrite",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13838,7 +13801,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 375,
+    "id": 374,
     "name": "helm",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13875,7 +13838,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 376,
+    "id": 375,
     "name": "drawio",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13912,7 +13875,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 377,
+    "id": 376,
     "name": "PrometheusMetricSourcewithRemoteWrite",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13949,7 +13912,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 378,
+    "id": 377,
     "name": "rancherdesktoponwindows",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -13986,7 +13949,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 379,
+    "id": 378,
     "name": "RancherOnCodeSpaces",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14023,7 +13986,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 380,
+    "id": 379,
     "name": "shellcommandincodespaces",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14060,7 +14023,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 381,
+    "id": 380,
     "name": "minikubeoncodespaces",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14097,7 +14060,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 382,
+    "id": 381,
     "name": "PrometheusCertificateImplementation",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14134,7 +14097,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 383,
+    "id": 382,
     "name": "bashscripts",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14171,7 +14134,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 384,
+    "id": 383,
     "name": "dockersandbox",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14208,7 +14171,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 385,
+    "id": 384,
     "name": "prometheus",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14245,7 +14208,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 386,
+    "id": 385,
     "name": "PrometheusRemoteWriteOpenShiftClusters",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14282,7 +14245,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 387,
+    "id": 386,
     "name": "thanosremotewriteendpoint",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14319,7 +14282,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 388,
+    "id": 387,
     "name": "PingOneAdvancedIdentityCloud",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14356,7 +14319,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 389,
+    "id": 388,
     "name": "formulasbygpt",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14393,7 +14356,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 390,
+    "id": 389,
     "name": "thanosreceiver",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14430,7 +14393,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 391,
+    "id": 390,
     "name": "jenkinsmigrationtoazuredevops",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14467,7 +14430,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 392,
+    "id": 391,
     "name": "macosapps",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14504,7 +14467,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 393,
+    "id": 392,
     "name": "adaptivesecuritytechniques",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14541,7 +14504,7 @@
     "skoolModule": "Delivery Pilot Track: Cybersecurity & Adversarial"
   },
   {
-    "id": 394,
+    "id": 393,
     "name": "automation-with-ansible",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14578,7 +14541,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 395,
+    "id": 394,
     "name": "GraphQL",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14615,7 +14578,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 396,
+    "id": 395,
     "name": "openshift-resources",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14652,7 +14615,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 397,
+    "id": 396,
     "name": "logicapp-emailsend",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14689,7 +14652,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 398,
+    "id": 397,
     "name": "privileged-identity-management",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14726,7 +14689,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 399,
+    "id": 398,
     "name": "cvascode",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14763,7 +14726,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 400,
+    "id": 399,
     "name": "podhtml",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14800,7 +14763,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 401,
+    "id": 400,
     "name": "rsa",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14837,7 +14800,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 402,
+    "id": 401,
     "name": "ingress_egress",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14874,7 +14837,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 403,
+    "id": 402,
     "name": "gitconflictresolve",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14911,7 +14874,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 404,
+    "id": 403,
     "name": "xq",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14948,7 +14911,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 405,
+    "id": 404,
     "name": "jq",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -14985,7 +14948,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 406,
+    "id": 405,
     "name": "cronjobs",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15022,7 +14985,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 407,
+    "id": 406,
     "name": "openshifthealthchecks",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15059,7 +15022,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 408,
+    "id": 407,
     "name": "gpt-outputs",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15096,7 +15059,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 409,
+    "id": 408,
     "name": "SecurityinOpenShift",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15133,7 +15096,7 @@
     "skoolModule": "Delivery Pilot Track: Cybersecurity & Adversarial"
   },
   {
-    "id": 410,
+    "id": 409,
     "name": "bashchangedirectory",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15170,7 +15133,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 411,
+    "id": 410,
     "name": "tcpdump",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15207,7 +15170,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 412,
+    "id": 411,
     "name": "winscpdevelopment",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15244,7 +15207,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 413,
+    "id": 412,
     "name": "openshift-redhat-sandbox",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15281,7 +15244,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 414,
+    "id": 413,
     "name": "openshift-basic-app-deploy",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15318,7 +15281,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 415,
+    "id": 414,
     "name": "graphanadevelopment",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15355,7 +15318,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 416,
+    "id": 415,
     "name": "openshiftsandboxazure",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15392,7 +15355,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 417,
+    "id": 416,
     "name": "openshiftonlocal",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15429,7 +15392,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 418,
+    "id": 417,
     "name": "kibanasandbox",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15466,7 +15429,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 419,
+    "id": 418,
     "name": "openshiftsandbox",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15503,7 +15466,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 420,
+    "id": 419,
     "name": "promptengineering",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15540,7 +15503,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 421,
+    "id": 420,
     "name": "contractormarketing",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15577,7 +15540,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 422,
+    "id": 421,
     "name": "SeleniumThinkific",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15614,7 +15577,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 423,
+    "id": 422,
     "name": "wordpressautomation",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15651,7 +15614,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 424,
+    "id": 423,
     "name": "video_edit_helper",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15688,7 +15651,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 425,
+    "id": 424,
     "name": "monitoringforairlinespoc",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15725,7 +15688,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 426,
+    "id": 425,
     "name": "selenium-immersion-with-csharp-course",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15762,7 +15725,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 427,
+    "id": 426,
     "name": "Linux-VM-Mastery-in-Azure-with-GPT-Assist-v6",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15799,7 +15762,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 428,
+    "id": 427,
     "name": "azurelogicappemailsupport",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15836,7 +15799,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 429,
+    "id": 428,
     "name": "awscertificate",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15873,7 +15836,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 430,
+    "id": 429,
     "name": "rifaterdemsahin.github.io",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15910,7 +15873,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 431,
+    "id": 430,
     "name": "pexabo",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15947,7 +15910,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 432,
+    "id": 431,
     "name": "iac",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -15984,7 +15947,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 433,
+    "id": 432,
     "name": "temp",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -16021,7 +15984,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 434,
+    "id": 433,
     "name": "my-project",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -16058,7 +16021,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 435,
+    "id": 434,
     "name": "k8st",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -16095,7 +16058,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 436,
+    "id": 435,
     "name": "devopsframework",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16132,7 +16095,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 437,
+    "id": 436,
     "name": "logicapps",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16169,7 +16132,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 438,
+    "id": 437,
     "name": "vps_windows",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -16206,7 +16169,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 439,
+    "id": 438,
     "name": "azure-quickstart-templates",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -16243,7 +16206,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 440,
+    "id": 439,
     "name": "swingtradingplatfrom",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -16280,7 +16243,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 441,
+    "id": 440,
     "name": "terraformtest",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16317,7 +16280,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 442,
+    "id": 441,
     "name": "aif",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -16354,7 +16317,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 443,
+    "id": 442,
     "name": "crawler",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -16391,7 +16354,7 @@
     "skoolModule": "Delivery Pilot Track: Automation & Tooling"
   },
   {
-    "id": 444,
+    "id": 443,
     "name": "katacoda-scenarios",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -16428,7 +16391,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 445,
+    "id": 444,
     "name": "awscodedeploy",
     "visibility": "PUBLIC",
     "isPrivate": false,
@@ -16465,7 +16428,7 @@
     "skoolModule": "Delivery Pilot Track: Cloud & DevOps"
   },
   {
-    "id": 446,
+    "id": 445,
     "name": "pirates",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16502,7 +16465,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 447,
+    "id": 446,
     "name": "blockpuzzlebasic",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16539,7 +16502,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 448,
+    "id": 447,
     "name": "ForexSignal",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16576,7 +16539,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 449,
+    "id": 448,
     "name": "nutrasof",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16613,7 +16576,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 450,
+    "id": 449,
     "name": "careercrisis",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16650,7 +16613,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 451,
+    "id": 450,
     "name": "LearnGeneric",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16687,7 +16650,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 452,
+    "id": 451,
     "name": "learnjokes",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16724,7 +16687,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 453,
+    "id": 452,
     "name": "yield",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16761,7 +16724,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 454,
+    "id": 453,
     "name": "BreastFeedingCalculatorGithub",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16798,7 +16761,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 455,
+    "id": 454,
     "name": "blockpuzzle",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16835,7 +16798,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 456,
+    "id": 455,
     "name": "cointoss",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16872,7 +16835,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 457,
+    "id": 456,
     "name": "dailygratitude",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16909,7 +16872,7 @@
     "skoolModule": "Delivery Pilot Track: AI & LLM"
   },
   {
-    "id": 458,
+    "id": 457,
     "name": "criticalthinking",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16946,7 +16909,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 459,
+    "id": 458,
     "name": "isguvenligi",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -16983,7 +16946,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 460,
+    "id": 459,
     "name": "speedyturret",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -17020,7 +16983,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 461,
+    "id": 460,
     "name": "californiaexamfree",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -17057,7 +17020,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 462,
+    "id": 461,
     "name": "themeapp",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -17094,7 +17057,7 @@
     "skoolModule": "Delivery Pilot Track: FullStack & Web Apps"
   },
   {
-    "id": 463,
+    "id": 462,
     "name": "fruitbirds",
     "visibility": "PRIVATE",
     "isPrivate": true,
@@ -17131,7 +17094,7 @@
     "skoolModule": "Delivery Pilot Track: Engineering & Architecture"
   },
   {
-    "id": 464,
+    "id": 463,
     "name": "HubApp",
     "visibility": "PRIVATE",
     "isPrivate": true,
