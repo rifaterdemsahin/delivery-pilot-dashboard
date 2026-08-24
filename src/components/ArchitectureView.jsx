@@ -11,8 +11,11 @@ import {
   Lock, 
   Globe, 
   ArrowRight, 
-  Database 
+  Database,
+  ExternalLink
 } from 'lucide-react';
+
+const SKOOL_COMMENT_URL = 'https://www.skool.com/delivery-pilot-8938/1-1-workshops?p=65f6a56e';
 
 export default function ArchitectureView({ onOpenVault, onOpenCloudflare, onOpenSkool }) {
   return (
@@ -109,33 +112,36 @@ export default function ArchitectureView({ onOpenVault, onOpenCloudflare, onOpen
               <GraduationCap className="w-6 h-6" />
             </div>
             <span className="text-xs font-bold text-amber-400 uppercase tracking-wider">Layer 3: Community & Cohorts</span>
-            <h4 className="text-lg font-bold text-white mt-1 mb-2">Skool Platform Booking</h4>
+            <h4 className="text-lg font-bold text-white mt-1 mb-2">Skool Platform Comment</h4>
             <p className="text-xs text-slate-300 leading-relaxed mb-4">
-              Participants build their customized interest basket and book live interactive workshop sessions with Rifat Erdem Sahin directly on the Skool platform.
+              Participants build their customized interest basket, copy the structured brief, and paste it as a comment on Skool before joining tonight&apos;s 1-1 or Sunday Cohort call.
             </p>
             <ul className="space-y-1.5 text-xs text-slate-400">
               <li className="flex items-center gap-2">
                 <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />
-                <span>Personalized curriculum export</span>
+                <span>1-1 AI Security VIP template</span>
               </li>
               <li className="flex items-center gap-2">
                 <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />
-                <span>Cohort calendar scheduling</span>
+                <span>Levels 1, 2 & 3 repository tracks</span>
               </li>
               <li className="flex items-center gap-2">
                 <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />
-                <span>Continuous community Q&A</span>
+                <span>Direct link to Skool post</span>
               </li>
             </ul>
           </div>
 
-          <button
-            onClick={onOpenSkool}
-            className="mt-6 w-full py-2 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-bold text-xs shadow-md transition flex items-center justify-center gap-2"
+          <a
+            href={SKOOL_COMMENT_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 w-full py-2 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-bold text-xs shadow-md transition flex items-center justify-center gap-2 hover:from-amber-400 hover:to-orange-400"
           >
             <GraduationCap className="w-3.5 h-3.5" />
-            <span>Book Workshop on Skool</span>
-          </button>
+            <span>Open Skool 1-1 Post</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
         </div>
 
       </div>
@@ -154,12 +160,12 @@ export default function ArchitectureView({ onOpenVault, onOpenCloudflare, onOpen
 # Synchronize credentials from Azure Key Vault to Cloudflare Environment
 set -euo pipefail
 
-VAULT_NAME="\${AZURE_KEYVAULT_NAME:-kv-deliverypilot-vault}"
+VAULT_NAME="\${AZURE_KEYVAULT_NAME:-dp-kv-deliverypilot}"
 echo "Fetching credentials from Azure Key Vault: $VAULT_NAME..."
 
-export CLOUDFLARE_API_TOKEN="$(az keyvault secret show --vault-name "$VAULT_NAME" --name "CLOUDFLARE-API-TOKEN" --query value -o tsv)"
-export CLOUDFLARE_ACCOUNT_ID="$(az keyvault secret show --vault-name "$VAULT_NAME" --name "CLOUDFLARE-ACCOUNT-ID" --query value -o tsv)"
-export GITHUB_PAT="$(az keyvault secret show --vault-name "$VAULT_NAME" --name "GITHUB-PAT" --query value -o tsv)"
+export CLOUDFLARE_API_TOKEN="$(az keyvault secret show --vault-name "$VAULT_NAME" --name "cloudflare-api-token" --query value -o tsv)"
+export CLOUDFLARE_ACCOUNT_ID="$(az keyvault secret show --vault-name "$VAULT_NAME" --name "cloudflare-account-id" --query value -o tsv)"
+export GITHUB_PAT="$(az keyvault secret show --vault-name "$VAULT_NAME" --name "github-pat" --query value -o tsv)"
 
 echo "✓ Credentials securely loaded into process environment."
 echo "Triggering Cloudflare deployment..."

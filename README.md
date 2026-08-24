@@ -4,7 +4,7 @@
 
 [![Live Deployment](https://img.shields.io/badge/Live%20Dashboard-Online-success?style=for-the-badge&logo=githubpages)](https://rifaterdemsahin.github.io/delivery-pilot-dashboard/)
 [![Cloudflare Pages](https://img.shields.io/badge/Cloudflare%20Pages-Edge%20Ready-orange?style=for-the-badge&logo=cloudflare)](https://delivery-pilot-dashboard.pages.dev)
-[![Skool Booking](https://img.shields.io/badge/Skool-Book%20Workshop-yellow?style=for-the-badge&logo=googleclassroom)](https://www.skool.com)
+[![Skool 1-1 Workshop](https://img.shields.io/badge/Skool-1--1%20Workshops-yellow?style=for-the-badge&logo=googleclassroom)](https://www.skool.com/delivery-pilot-8938/1-1-workshops?p=65f6a56e)
 
 ---
 
@@ -12,37 +12,68 @@
 
 - 🚀 **Live Production Dashboard**: [https://rifaterdemsahin.github.io/delivery-pilot-dashboard/](https://rifaterdemsahin.github.io/delivery-pilot-dashboard/)
 - ⚡ **Cloudflare Pages URL**: [https://delivery-pilot-dashboard.pages.dev](https://delivery-pilot-dashboard.pages.dev)
+- 🎓 **Skool 1-1 Workshops Post (Paste Comments Here)**: [https://www.skool.com/delivery-pilot-8938/1-1-workshops?p=65f6a56e](https://www.skool.com/delivery-pilot-8938/1-1-workshops?p=65f6a56e)
 - 📦 **GitHub Repository**: [https://github.com/rifaterdemsahin/delivery-pilot-dashboard](https://github.com/rifaterdemsahin/delivery-pilot-dashboard)
-- 🎓 **Skool Community & Booking**: [https://www.skool.com](https://www.skool.com)
+- 📚 **GitHub Repositories**: [https://github.com/rifaterdemsahin?tab=repositories](https://github.com/rifaterdemsahin?tab=repositories)
 
 ---
 
-## 🌟 Key Features
+## 🧭 Navigation & Admin Menu
 
-1. **Complete Public & Private Repositories Catalog**:
-   - Lists all 464+ repositories with clear **PUBLIC** and **PRIVATE** visibility badges.
-   - Categorized into domains: *AI & LLM*, *Cybersecurity & Adversarial*, *Cloud & DevOps*, *FullStack & Web Apps*, and *Automation & Tooling*.
-   - Instant search, multi-faceted filtering by language, category, and stars.
+The dashboard organizes delivery controls into clean navigation items and an **Admin** dropdown:
+- **Repositories & Workshops**: Complete catalog of public and private repositories with search and basket builder.
+- **Pre & Post Conditions Matrix**: Multi-level prerequisite and outcome definitions across engineering tracks.
+- **Admin Dropdown**:
+  - `Cloudflare & Key Vault Spec`: Architecture flow and edge pipeline documentation.
+  - `Azure Key Vault`: Interactive credentials manager & Azure CLI secret generator.
+  - `Cloudflare Edge`: Wrangler deployment options and CI/CD workflow specs.
 
-2. **Workshop Interest Basket & Builder**:
-   - Select multiple repositories to craft a customized workshop delivery track.
-   - Live calculation of workshop scope, duration, and dependencies.
-   - Instant copy/export of tailored workshop curriculum brief.
+---
 
-3. **Pre-Conditions & Post-Conditions Engine**:
-   - **Pre-Conditions**: Explicit prerequisites (Git PAT, Node/Python/Docker environments, API keys, Azure & Cloudflare credentials) required prior to workshop kickoff.
-   - **Post-Conditions**: Measurable definitions of done (live Cloudflare Edge deployment, automated CI/CD green status, zero secret leaks, eval benchmarks >= 90%).
+## 🎓 Sunday Cohorts & 1-1 Workshop Template
 
-4. **Skool Platform Integration**:
-   - Direct interactive booking modal to schedule workshop delivery sessions on the **Skool** community platform.
-   - Pre-fills customized repository choices, track goals, and attendee details.
+Participants copy their customized session brief and paste it as a comment on the [Skool 1-1 Workshops Post](https://www.skool.com/delivery-pilot-8938/1-1-workshops?p=65f6a56e) before entering calls.
 
-5. **Cloudflare Edge Deployment**:
-   - Fully optimized static Single Page Application (SPA) with `wrangler.toml`, `_headers`, and `_redirects`.
-   - Automated GitHub Actions workflow (`.github/workflows/deploy-cloudflare.yml`) for zero-downtime edge deployments.
+### Workshop Brief Structure
 
-6. **Azure Key Vault Zero-Trust Credential Store**:
-   - Automated scripts (`scripts/sync-azure-keyvault.sh`) and Azure CLI commands generator to securely fetch and inject `GITHUB_PAT`, `CLOUDFLARE_API_TOKEN`, and AI service keys without storing plaintext secrets in code.
+```text
+COHORTS ON SUNDAYS
+
+1-1 WORKSHOPS
+
+🚨 Ready to bulletproof your AI stack before tonight’s session? Join us live as we step through foundational to advanced AI security presets, audit live repositories, and enforce strict runtime guardrails.
+
+A) Meeting Preset: 1-1 AI Security Workshop VIP
+
+Frequency: Weekly (Cohorts on Sundays / 1-1 Slots)
+Time: Today @ 7:00 PM – 9:00 PM (BST / London Time)
+Location: Skool Live Room
+Lead Instructor / Host: Rifat Erdem Sahin (https://github.com/rifaterdemsahin)
+
+Preconditions
+• Active Skool account with VIP tier permissions for live laboratory access.
+• Local environment setup with Git, Docker, Python 3.10+, and pre-cloned workshop repositories.
+• Provisioned API keys (OpenAI / Anthropic / Gemini) with rate limits configured for red-teaming tests.
+
+Agenda, Experience Levels & GitHub Repositories
+
+Level 1: Fundamentals & Code Quality
+• 📂 Workspaces & SonarQube Auditing: Setting up isolated environments with RBAC and running automated static code analysis using rifaterdemsahin/SonarQube.
+• 🧠 Memory Retention & DLP: Locking down session histories to prevent accidental context and credential leakage.
+
+Level 2: Guardrails & Tool Integrations
+• 🛡️ Runtime Guardrails: Blocking live prompt injections, system prompt extraction, and jailbreak payloads before reaching models.
+• 🔌 Zero-Trust Integrations: Securing model context protocol (MCP) endpoints and external API calls with strict authentication.
+
+Level 3: Advanced Sandboxing & Infrastructure Security
+• 📦 Containerized Execution: Executing generated agent code within isolated sandbox containers.
+• ☁️ Cluster Logging & Auditing: Capturing runtime events using OpenShift/Kubernetes event routing patterns referenced in rifaterdemsahin/OpenShiftEventRouter.
+
+Postconditions
+• Target AI architecture stress-tested against prompt injections and unauthenticated execution vectors.
+• Memory isolation, RBAC, and container sandboxing verified operating in production-equivalent setups.
+• Participant issued a customized remediation roadmap backed by sample presets from the workshop GitHub organization.
+```
 
 ---
 
@@ -51,45 +82,13 @@
 ```mermaid
 flowchart TD
     Audience["Audience / Delivery Pilot"] -->|Explore & Select Repos| Dashboard["Delivery Pilot Dashboard (React + Vite + Tailwind)"]
-    Dashboard -->|Pre & Post Conditions Check| Conditions["Workshop Readiness Engine"]
-    Dashboard -->|Book Workshop & Send Payload| Skool["Skool Community Platform"]
+    Dashboard -->|Copy Level 1-3 Brief| CopyAction["Manual Copy to Clipboard"]
+    CopyAction -->|Paste as Comment| Skool["Skool 1-1 Workshops Post (p=65f6a56e)"]
     
-    AzureKV["Azure Key Vault (Secrets)"] -->|Inject GITHUB_PAT & CF_API_TOKEN| Script["sync-azure-keyvault.sh"]
+    AzureKV["Azure Key Vault (dp-kv-deliverypilot)"] -->|Inject GITHUB_PAT & CF_API_TOKEN| Script["sync-azure-keyvault.sh"]
     Script -->|Deploy Build Assets| Cloudflare["Cloudflare Pages Edge (Global CDN)"]
     
     Dashboard --> Cloudflare
-```
-
----
-
-## 🚀 Quick Start
-
-### 1. Install Dependencies & Enrich Repos Data
-```bash
-npm install
-npm run enrich
-```
-
-### 2. Run Local Development Server
-```bash
-npm run dev
-```
-
-The application will be available at `http://localhost:3000`.
-
-### 3. Production Build & Verification
-```bash
-npm run build
-```
-
-### 4. Deploy to Cloudflare Pages
-```bash
-# Set your Cloudflare credentials (or fetch via Azure Key Vault)
-export CLOUDFLARE_API_TOKEN="<your-cloudflare-token>"
-export CLOUDFLARE_ACCOUNT_ID="<your-cloudflare-account-id>"
-
-# Deploy dist output
-npx wrangler pages deploy dist --project-name=delivery-pilot-dashboard
 ```
 
 ---
@@ -103,33 +102,13 @@ Run the automated helper to store secrets in your Azure Key Vault:
 az login
 
 # 2. Set secrets in your Azure Key Vault
-az keyvault secret set --vault-name "kv-deliverypilot-vault" --name "CLOUDFLARE-API-TOKEN" --value "<TOKEN>"
-az keyvault secret set --vault-name "kv-deliverypilot-vault" --name "CLOUDFLARE-ACCOUNT-ID" --value "<ACCOUNT_ID>"
-az keyvault secret set --vault-name "kv-deliverypilot-vault" --name "GITHUB-PAT" --value "<PAT>"
+az keyvault secret set --vault-name "dp-kv-deliverypilot" --name "CLOUDFLARE-API-TOKEN" --value "<TOKEN>"
+az keyvault secret set --vault-name "dp-kv-deliverypilot" --name "CLOUDFLARE-ACCOUNT-ID" --value "<ACCOUNT_ID>"
+az keyvault secret set --vault-name "dp-kv-deliverypilot" --name "GITHUB-PAT" --value "<PAT>"
 
 # 3. Pull secrets into local environment
 bash scripts/sync-azure-keyvault.sh
 ```
-
----
-
-## 📋 Workshop Pre & Post Conditions Overview
-
-| Domain | Pre-Conditions (Prerequisites) | Post-Conditions (Target Outcomes) |
-|---|---|---|
-| **AI & LLM** | Python 3.10+, OpenAI/Gemini Key in Key Vault, Vector DB setup | Live AI agent on Cloudflare Workers AI, Benchmark eval >= 90%, Sub-second streaming |
-| **Cybersecurity** | Docker sandbox, Adversarial test suite, Security credentials | Attack evasion simulated & blocked, 0 plaintext secret leaks, Audit telemetry active |
-| **Cloud & DevOps** | Azure Subscription, Terraform CLI, Cloudflare API Token | IaC deployed without drift, SSL edge operational, Key Vault auto-sync running |
-| **FullStack** | Node.js 20 LTS, Chrome browser, Git PAT | SPA deployed to Cloudflare Pages, 100% Lighthouse score, Skool booking verified |
-
----
-
-## 🎓 Book a Workshop on Skool
-
-Visit the Skool community to schedule cohort dates and review materials:
-- **Live Application**: [https://rifaterdemsahin.github.io/delivery-pilot-dashboard/](https://rifaterdemsahin.github.io/delivery-pilot-dashboard/)
-- **Skool Community**: [https://www.skool.com](https://www.skool.com)
-- **GitHub Repositories**: [https://github.com/rifaterdemsahin?tab=repositories](https://github.com/rifaterdemsahin?tab=repositories)
 
 ---
 

@@ -11,8 +11,12 @@ import {
   Lock, 
   ArrowRight,
   ExternalLink,
-  Sparkles
+  Sparkles,
+  Layers,
+  Flame
 } from 'lucide-react';
+
+const SKOOL_COMMENT_URL = 'https://www.skool.com/delivery-pilot-8938/1-1-workshops?p=65f6a56e';
 
 export default function InterestBasketDrawer({ 
   isOpen, 
@@ -26,25 +30,47 @@ export default function InterestBasketDrawer({
 
   if (!isOpen) return null;
 
-  const repoNames = selectedRepos.map(r => r.name);
   const totalPublic = selectedRepos.filter(r => !r.isPrivate).length;
   const totalPrivate = selectedRepos.filter(r => r.isPrivate).length;
 
-  // Aggregate unique pre and post conditions
   const allPreConditions = Array.from(new Set(selectedRepos.flatMap(r => r.preConditions)));
   const allPostConditions = Array.from(new Set(selectedRepos.flatMap(r => r.postConditions)));
 
   const copyInterestPayload = () => {
-    const summaryText = `# Delivery Pilot Workshop Interest & Booking Request
-Selected Repositories (${selectedRepos.length}):
-${selectedRepos.map((r, i) => `${i + 1}. [${r.name}](${r.url}) (${r.isPrivate ? 'PRIVATE' : 'PUBLIC'}) - Category: ${r.category}`).join('\n')}
+    const reposList = selectedRepos.map((r, i) => `   - ${r.name} (${r.visibility}) [${r.category}]: ${r.url}`).join('\n');
 
-Key Workshop Deliverables:
-${allPostConditions.slice(0, 5).map(c => `- ${c}`).join('\n')}
+    const summaryText = `COHORTS ON SUNDAYS
 
-Deployment Target: Cloudflare Edge & Pages
-Secrets Management: Azure Key Vault
-Platform: Skool Delivery Pilot Workshop`;
+1-1 WORKSHOPS
+
+🚨 Ready to bulletproof your AI stack before tonight’s session? Join us live as we step through foundational to advanced AI security presets, audit live repositories, and enforce strict runtime guardrails.
+
+A) Meeting Preset: 1-1 AI Security Workshop VIP
+
+Frequency: Weekly (Cohorts on Sundays / 1-1 Slots)
+Time: Today @ 7:00 PM – 9:00 PM (BST / London Time)
+Location: Skool Live Room
+Lead Instructor / Host: Rifat Erdem Sahin (https://github.com/rifaterdemsahin)
+
+Preconditions
+• Active Skool account with VIP tier permissions for live laboratory access.
+• Local environment setup with Git, Docker, Python 3.10+, and pre-cloned workshop repositories.
+• Provisioned API keys (OpenAI / Anthropic / Gemini) with rate limits configured for red-teaming tests.
+
+Selected Repositories for this Session (${selectedRepos.length}):
+${reposList}
+
+Agenda, Experience Levels & GitHub Repositories
+• Level 1 (Fundamentals): Workspaces & SonarQube auditing (rifaterdemsahin/SonarQube), Memory Retention & DLP
+• Level 2 (Guardrails): Runtime guardrails against prompt injection, Zero-Trust MCP endpoints
+• Level 3 (Sandboxing): Containerized execution, Cluster logging (rifaterdemsahin/OpenShiftEventRouter)
+
+Postconditions
+• Target AI architecture stress-tested against prompt injections and unauthenticated execution vectors.
+• Memory isolation, RBAC, and container sandboxing verified operating in production-equivalent setups.
+• Participant issued a customized remediation roadmap backed by sample presets from the workshop GitHub organization.
+
+Comment submitted on Skool: ${SKOOL_COMMENT_URL}`;
 
     navigator.clipboard.writeText(summaryText);
     setCopiedPayload(true);
@@ -52,7 +78,7 @@ Platform: Skool Delivery Pilot Workshop`;
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-hidden bg-slate-950/70 backdrop-blur-sm animate-fadeIn">
+    <div className="fixed inset-0 z-50 overflow-hidden bg-slate-950/75 backdrop-blur-sm animate-fadeIn">
       <div className="absolute inset-y-0 right-0 max-w-full flex pl-10">
         <div className="w-screen max-w-md bg-slate-900 border-l border-slate-800 shadow-2xl flex flex-col justify-between">
           
@@ -104,7 +130,7 @@ Platform: Skool Delivery Pilot Workshop`;
                     </button>
                   </div>
 
-                  <div className="space-y-2.5 max-h-60 overflow-y-auto pr-1">
+                  <div className="space-y-2.5 max-h-56 overflow-y-auto pr-1">
                     {selectedRepos.map((repo) => (
                       <div 
                         key={repo.id}
@@ -181,7 +207,7 @@ Platform: Skool Delivery Pilot Workshop`;
                 className="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 flex items-center justify-center gap-2 border border-slate-700 transition"
               >
                 {copiedPayload ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5 text-slate-400" />}
-                <span>{copiedPayload ? 'Copied Interest Summary' : 'Copy Interest Summary'}</span>
+                <span>{copiedPayload ? 'Copied Brief' : 'Copy Brief for Skool Comment'}</span>
               </button>
 
               <button
@@ -189,7 +215,7 @@ Platform: Skool Delivery Pilot Workshop`;
                 className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 hover:from-amber-400 hover:to-rose-400 text-slate-950 font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-orange-500/25 transition transform hover:-translate-y-0.5"
               >
                 <GraduationCap className="w-4 h-4" />
-                <span>Book Workshop on Skool ({selectedRepos.length} Repos)</span>
+                <span>Sunday Cohorts & 1-1s on Skool</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>
